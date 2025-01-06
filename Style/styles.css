@@ -230,5 +230,43 @@ span{
     margin: 1rem 0 3rem;
 }
 
+.project-container-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding-top: 1rem;
+}
+
+.project-card{
+    background: var(--snd-bg-color);
+    padding: 3rem 1.5rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.titulo-project{
+    font-size: 2.6rem;
+    margin-bottom: 2.5rem;
+}
+
+.project-btn p{
+    margin-right: .5rem;
+    font-size: 1.3rem;
+}
+
+.project-btn{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    column-gap: .25rem;
+}
+
+.project-btn:hover .project-icon{
+    transform: translateX(.25rem);
+}
+
+.project-icon{
+    transition: .4s;
+    font-size: 1rem;
+}
+
 
 
