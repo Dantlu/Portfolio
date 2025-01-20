@@ -421,6 +421,22 @@ span{
         display: block;
     }
 
+    .nabvar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 1rem 3%;
+        width: 100%;
+        background-color: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem .1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    .nabvar.active{
+        display: block;
+    }
+
     .home{
         flex-direction: column;
     }
