@@ -99,6 +99,7 @@ span{
 .home-img img{
     width: 25vw;
     animation: floatImage 3s ease-in-out infinite;
+    margin: 2%;
 }
 
 @keyframes floatImage{
