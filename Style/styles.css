@@ -246,6 +246,27 @@ span{
     align-items: center;
 }
 
+.filtros{
+    display: flex;
+    justify-content: center;
+    column-gap: .75rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.item-filtros{
+    cursor: pointer;
+    color: var(--text-color);
+    padding: .25rem .75rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+}
+
+.filtro-activo{
+    background-color: var(--main-color);
+    color: var(--snd-bg-color);
+}
+
 .portfolio-container .portfolio-box{
     position: relative;
     border-radius: 2rem;
