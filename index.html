@@ -35,7 +35,7 @@
                 Siempre estoy en busca de nuevos desafíos y oportunidades para seguir creciendo profesionalmente.</p>
             <div class="social-media">
                 <a href="www.linkedin.com/in/dante-luongo" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/Dantlu" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/Dantlu" target="_blank" aria-label="Visita mi perfil de GitHub"><i class="fa-brands fa-github"></i></a>
                 <a href="https://api.whatsapp.com/send?phone=541140653208&text=Hola! Escribeme" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="https://www.instagram.com/dante.luongo?igsh=NzBmcnNzOW5rZ2Vx" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             </div>
@@ -95,12 +95,12 @@
         <h2 class="heading">Mis <span>Proyectos</span></h2>
         <div class="portfolio-container">
             <div class="filtros">
-                <span class="item-filtros filtro-activo">Todos</span>
-                <span class="item-filtros">Back-end</span>
-                <span class="item-filtros">Front-end</span>
-                <span class="item-filtros">Análisis de Datos</span>
+                <span class="item-filtros filtro-activo" data-filter='all'>Todos</span>
+                <span class="item-filtros" data-filter='.back'>Back-end</span>
+                <span class="item-filtros" data-filter='.front'>Front-end</span>
+                <span class="item-filtros" data-filter='.data'>Análisis de Datos</span>
             </div>
-            <div class="portfolio-box">
+            <div class="portfolio-box mix back">
                 <img src="Img/harry.jpeg" alt="">
                 <div class="portfolio-layer">
                     <h4>Clinica</h4>
@@ -111,7 +111,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-box">
+            <div class="portfolio-box mix front">
                 <img src="Img/harry.jpeg" alt="">
                 <div class="portfolio-layer">
                     <h4>Clinica</h4>
@@ -122,7 +122,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-box">
+            <div class="portfolio-box mix data">
                 <img src="Img/harry.jpeg" alt="">
                 <div class="portfolio-layer">
                     <h4>Clinica</h4>
@@ -133,7 +133,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-box">
+            <div class="portfolio-box mix back">
                 <img src="Img/harry.jpeg" alt="">
                 <div class="portfolio-layer">
                     <h4>Clinica</h4>
@@ -144,7 +144,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-box">
+            <div class="portfolio-box mix data">
                 <img src="Img/harry.jpeg" alt="">
                 <div class="portfolio-layer">
                     <h4>Clinica</h4>
@@ -155,7 +155,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-box">
+            <div class="portfolio-box mix front">
                 <img src="Img/harry.jpeg" alt="">
                 <div class="portfolio-layer">
                     <h4>Clinica</h4>
@@ -181,7 +181,7 @@
                 <input type="text" placeholder="Asunto del email">
             </div>
             <textarea name="" id="" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
-            <input type="submit" value="Enviar email" class="btn">
+            <input type="submit" value="Enviar mensaje" class="btn">
         </form>
     </section>
 
@@ -200,6 +200,9 @@
 
     <!--TYPED JS-->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!--KUNKALAB MIXITUP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!--MAIN JS-->
     <script src="JS/main.js"></script>

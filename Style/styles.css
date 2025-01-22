@@ -244,14 +244,20 @@ span{
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
     align-items: center;
+    position: relative;
 }
 
 .filtros{
-    display: flex;
-    justify-content: center;
-    column-gap: .75rem;
-    align-items: center;
-    margin-bottom: 2rem;
+    position: absolute;
+    top: -40px;
+    left: 50%; 
+    transform: translateX(-50%);
+    z-index: 1; 
+    background-color: var(--bg-color);
+    padding: 10px 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    text-align: center;
 }
 
 .item-filtros{
@@ -273,6 +279,7 @@ span{
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
+    margin-top: 4%;
 }
 
 .portfolio-box img{

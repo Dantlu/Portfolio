@@ -53,3 +53,20 @@ const typed = new Typed('.multiple-text',{
 });
 
 /*FILTROS ACTIVOS*/
+let mixerPortfolio = mixitup('.portfolio-container', {
+    selectors: {
+        target: '.portfolio-box'
+    },
+    animation: {
+        duration: 300
+    }
+});
+
+const linkProject = document.querySelectorAll('.item-filtros');
+
+function activeProject(){
+    linkProject.forEach(l=>l.classList.remove('filtro-activo'))
+    this.classList.add('filtro-activo')
+}
+
+linkProject.forEach(l=>l.addEventListener('click', activeProject))
