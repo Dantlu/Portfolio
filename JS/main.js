@@ -70,3 +70,17 @@ function activeProject(){
 }
 
 linkProject.forEach(l=>l.addEventListener('click', activeProject))
+
+/*MANDAR MAILS*/
+const contactForm = document.getElementById('contact'),
+      contactName = document.getElementById('contact-name'),
+      contactMail = document.getElementById('contact-email'), 
+      contactNumber = document.getElementById('contact-number'), 
+      contactSub = document.getElementById('contact-subject'),
+      contactText = document.getElementById('contact-text')
+
+const sendEmail = (e)=>{
+
+}
+
+contactForm.addEventListener('submit', sendEmail)
