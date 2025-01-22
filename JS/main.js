@@ -80,7 +80,7 @@ const contactForm = document.getElementById('contact'),
       contactText = document.getElementById('contact-text')
 
 const sendEmail = (e)=>{
-
+    e.preventDefault()
 }
 
 contactForm.addEventListener('submit', sendEmail)
