@@ -77,10 +77,20 @@ const contactForm = document.getElementById('contact'),
       contactMail = document.getElementById('contact-email'), 
       contactNumber = document.getElementById('contact-number'), 
       contactSub = document.getElementById('contact-subject'),
-      contactText = document.getElementById('contact-text')
+      contactText = document.getElementById('contact-text'),
+      contactMessage = document.getElementById('contact-message')
 
 const sendEmail = (e)=>{
     e.preventDefault()
+
+    if(contactName.value ==='' || contactMail.value ==='' || contactNumber.value ==='' || contactSub.value ==='' || contactText.value ===''){
+        contactMessage.classList.remove('color-blue')
+        contactMessage.classList.add('color-red')
+
+        contactMessage.textContent = 'Complete todos los campos por favor 📩'
+    }else{
+        emailjs.sendForm('service_modhedr','','')
+    }
 }
 
 contactForm.addEventListener('submit', sendEmail)
