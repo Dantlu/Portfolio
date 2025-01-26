@@ -170,16 +170,12 @@
     <section class="contact" id="contact">
         <h2 class="heading">Conta<span>ctame</span></h2>
         
-        <form action="#">
+        <form action="#" id="contact-form">
             <div class="input-box">
-                <input type="text" required name="user-name" placeholder="Escriba su nombre" id="contact-name">
-                <input type="email" required name="user-email" placeholder="Indique su email" id="contact-email">
+                <input type="text" required name="user_name" placeholder="Escriba su nombre" id="contact-name">
+                <input type="email" required name="user_email" placeholder="Indique su email" id="contact-email">
             </div>
-            <div class="input-box">
-                <input type="number" required name="user-number" placeholder="Indique número" id="contact-number">
-                <input type="text" required name="user-sub" placeholder="Asunto del email" id="contact-subject">
-            </div>
-            <textarea name="" id="contact-text" cols="30" rows="10" required name="user-text" placeholder="Escriba su mensaje"></textarea>
+            <textarea name="" id="contact-text" cols="30" rows="10" required name="user_text" placeholder="Escriba su mensaje"></textarea>
             <p class="contact-message" id="contact-message"></p>
             <input type="submit" value="Enviar mensaje" class="btn">
         </form>

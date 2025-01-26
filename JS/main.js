@@ -75,21 +75,37 @@ linkProject.forEach(l=>l.addEventListener('click', activeProject))
 const contactForm = document.getElementById('contact'),
       contactName = document.getElementById('contact-name'),
       contactMail = document.getElementById('contact-email'), 
-      contactNumber = document.getElementById('contact-number'), 
-      contactSub = document.getElementById('contact-subject'),
       contactText = document.getElementById('contact-text'),
       contactMessage = document.getElementById('contact-message')
 
 const sendEmail = (e)=>{
     e.preventDefault()
 
-    if(contactName.value ==='' || contactMail.value ==='' || contactNumber.value ==='' || contactSub.value ==='' || contactText.value ===''){
+    if(contactName.value ==='' || contactMail.value ==='' ||  contactText.value ===''){
         contactMessage.classList.remove('color-blue')
         contactMessage.classList.add('color-red')
 
         contactMessage.textContent = 'Complete todos los campos por favor 📩'
     }else{
-        emailjs.sendForm('service_modhedr','','')
+        emailjs.sendForm('service_modhedr','template_baxwe7d','#contact-form','TWJjVEAl8z34N2dN1')
+            .then(()=>{
+                //Mensaje y color
+                contactMessage.classList.add('color-blue')
+                contactMessage.textContent = 'Mensaje enviado ✅'
+                
+                //Borrar mensaje
+                setTimeout(()=>{
+                    contactMessage.textContent=''
+                }, 5000)
+            }, (error)=>{
+                alert('Oh! parece que algo falló', error)
+            })
+
+            //limpiar inputs
+            contactName.value=''
+            contactMail.value=''
+            contactText.value=''
+       
     }
 }
 
