@@ -72,7 +72,7 @@ function activeProject(){
 linkProject.forEach(l=>l.addEventListener('click', activeProject))
 
 /*MANDAR MAILS*/
-const contactForm = document.getElementById('contact'),
+const contactForm = document.getElementById('contact-form'),
       contactName = document.getElementById('contact-name'),
       contactMail = document.getElementById('contact-email'), 
       contactText = document.getElementById('contact-text'),
@@ -81,13 +81,13 @@ const contactForm = document.getElementById('contact'),
 const sendEmail = (e)=>{
     e.preventDefault()
 
-    if(contactName.value ==='' || contactMail.value ==='' ||  contactText.value ===''){
+    if(contactName.value === '' || contactMail.value === '' ||  contactText.value === ''){
         contactMessage.classList.remove('color-blue')
         contactMessage.classList.add('color-red')
 
         contactMessage.textContent = 'Complete todos los campos por favor 📩'
     }else{
-        emailjs.sendForm('service_modhedr','template_baxwe7d','#contact-form','TWJjVEAl8z34N2dN1')
+        emailjs.sendForm('service_modhedr','template_12hnudu','#contact-form','TWJjVEAl8z34N2dN1')
             .then(()=>{
                 //Mensaje y color
                 contactMessage.classList.add('color-blue')
@@ -109,4 +109,4 @@ const sendEmail = (e)=>{
     }
 }
 
-contactForm.addEventListener('submit', sendEmail)
+contactForm.addEventListener('submit', sendEmail);

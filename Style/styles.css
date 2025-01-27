@@ -387,7 +387,7 @@ span{
 }
 
 .color-red{
-    color: hsl(4,91%,50%);
+    color: hsl(4,61%,50%);
 }
 
 .color-blue{
@@ -457,6 +457,10 @@ span{
 
     .footer{
         padding: 2rem 3%;
+    }
+
+    .contact-message{
+        font-size: .8rem;
     }
 }
 
